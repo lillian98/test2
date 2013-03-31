@@ -12,8 +12,13 @@
     c.font = 'bold 16px verdana';
     c.fillText("文字1",200,30);
     c.save();
+    c.translate(200,30);
     c.rotate(Math.PI/6);
     c.fillText("文字2",200,30);
+    c.restore();
+    c.translate(200,30);
+    c.rotate(Math.PI/6);
+    c.fillText("text3",0,0);
     c.restore();
 </script>
 </body>
